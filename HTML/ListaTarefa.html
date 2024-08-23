@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/ListaTarefa.css">
+    <title>Lista Tarefa</title>
+</head>
+<body>
+
+    <div class="banner"><img src="../IMG/LISTA/bg-desktop-dark.jpg"></div>
+
+    <div class="container">
+        <div class="titulo">
+            <p>TODO</p> <img src="../IMG/LISTA/icon-sun.svg" class="icon">
+        </div>
+
+        <div class="novaTarefa">
+            <input type="text" placeholder="Crie Nova Tarefa" max="100" min="1" class="inputNovaTarefa">
+        </div>
+
+        <div class="card">
+
+            <div class="todasTarefas">
+                
+            <div class="estatisticas">
+                <p class="itensRestantes">0 itens faltando</p>
+                <p class="filtro active" id="todos">Todos</p>
+                <p class="filtro" id="completo">Completos</p>
+                <p class="filtro" id="incompleto">Incompletos</p>
+                <p class="Excluir">Excluir os completos</p>
+            </div>
+
+            </div>
+
+        </div>
+    </div>
+    <script src="../JS/ListaTarefa.js"></script>
+</body>
+</html>

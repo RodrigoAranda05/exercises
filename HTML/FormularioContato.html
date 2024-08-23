@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/FormularioContato.css">
+    <title>Formulario</title>
+</head>
+<body>
+
+    
+    <div class="container">
+     <div class="card">
+        <div class="itens">
+
+        <h2>Contato</h2>
+
+        <div class="nome-container">
+            <div class="nome-item">
+                <p>Primeiro Nome</p>
+                <input type="name" required maxlength="20" class="caixaNome" id="nome">
+            </div>
+            <div class="nome-item">
+                <p>Segundo Nome</p>
+                <input type="name" required maxlength="40" class="caixaNome" id="sobrenome">
+            </div>
+        </div>
+
+        <p>Email</p>
+        <input type="email" required maxlength="60" class="caixaEmail">
+
+        <p>Qual você deseja?</p>
+        <div class="escolha-container">
+            <div class="escolha-item">
+                <h3><input type="radio" class="escolha" id="aju" name="opcao" value="ajudante">Ajudante</h3>
+            </div>
+            <div class="escolha-item">
+                <h3><input type="radio" class="escolha" id="sup" name="opcao" value="suporte">Suporte</h3>
+            </div>
+        </div>
+        
+        <p>Mensagem</p>
+        <textarea required maxlength="500" class="mensagem"></textarea>
+
+        <p><input type="checkbox" class="check">Você deseja enviar essa mensagem</p>
+
+        <input type="submit" value="Enviar" class="btn" onclick="enviar()">
+
+        </div>
+     </div>
+    </div>
+
+    <script src="../JS/FormularioContato.js"></script>
+    
+</body>
+</html>

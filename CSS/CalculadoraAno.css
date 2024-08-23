@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --bg: #F0F0F0;
+    --branco: #FFFFFF;
+    --roxo: #864CFF;
+    --preto: #000000;
+}
+
+body{
+    font-family: 'Work Sans', sans-serif;
+    background-color: var(--bg);
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.card{
+    background-color: var(--branco);
+    width: 750px;
+    height: 750px;
+    border-radius: 20px 20px 300px 20px;
+}
+
+.itens{
+    margin: 50px;
+}
+
+.input{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.dia, .mes, .ano{
+    width: 130px;
+    height: 60px;
+    border-radius: 10px;
+    border: 1px solid;
+    margin-right: 50px;
+    font-size: 1.5rem
+}
+
+.dia, .mes, .ano::placeholder{
+    font-size: 1.5rem
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--roxo);
+    color: var(--branco);
+    font-size: 1.3rem;
+    margin-bottom: -40px;
+    cursor: pointer;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.resultado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 120px;
+}
+
+.ano-res, .dia-res, .mes-res{
+    font-size: 6rem;
+    font-weight: bold;
+    color: var(--preto);
+}
+
+.ano-res span, .dia-res span, .mes-res span{
+    color: var(--roxo);
+}
+
+
+@media (max-width: 680px) {
+.card{
+    background-color: var(--branco);
+    width: 550px;
+    height: 550px;
+    border-radius: 20px 20px 300px 20px;
+}
+.dia, .mes, .ano{
+    width: 100px;
+    height: 60px;
+    border-radius: 10px;
+    border: 1px solid;
+    margin-right: 30px;
+    font-size: 1.5rem
+}
+}
+
+@media (max-width: 460px) {
+    .card{
+        background-color: var(--branco);
+        width: 450px;
+        height: 450px;
+        border-radius: 20px 20px 300px 20px;
+    }
+    .dia, .mes, .ano{
+        width: 100px;
+        height: 60px;
+        border-radius: 10px;
+        border: 1px solid;
+        margin-right: 30px;
+        font-size: 1.5rem
+    }
+    .ano-res, .dia-res, .mes-res{
+        font-size: 3rem;
+        font-weight: bold;
+        color: var(--preto);
+    }
+    }
+    

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/CalculadoraAno.css">
+    <title>Calculador Ano</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="card">
+            <div class="itens">
+                <div class="input">
+                    <input type="number" class="dia" placeholder="DD" min="1">
+                    <input type="number" class="mes" placeholder="MM" min="1">
+                    <input type="number" class="ano" placeholder="AAAA" min="1">
+                </div>
+                <div class="btn-container">
+                <div class="btn" onclick="calcular()">
+                    R
+                </div>
+                </div>
+                <hr>
+                <div class="restultado">
+                    <div class="ano-res">
+                        <span class="res-a">--</span> Anos
+                    </div>
+
+                    <div class="mes-res">
+                        <span class="res-m">--</span> Mes
+                    </div>
+
+                    <div class="dia-res">
+                        <span class="res-d">--</span> Dias
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="../JS/CalculadoraAno.js"></script>
+</body>
+</html>

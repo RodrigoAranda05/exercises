@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/Inscricao.css">
+    <title>Inscrição</title>
+</head>
+<body>
+
+    <div class="overlay"></div>
+
+    <div class="container">
+        <div class="card">
+            <div class="itens">
+
+                <div class="imagem-rsp">
+                    <img src="../IMG/INSCRIÇÃO/illustration-sign-up-mobile.svg">
+                </div>
+
+            <div class="titulo"><h1>Fique Atualizado!</h1></div>
+            <div class="paragrafo"><p>Entre para receber atualizações de 60,000 + produtos</p></div>
+
+            <div class="lista">
+                <div class="confirma">
+                    <img src="../IMG/INSCRIÇÃO/icon-list.svg" class="icon">
+                    <p>Diversidades de produtos de qualidade</p>
+                </div>
+                <div class="confirma">
+                    <img src="../IMG/INSCRIÇÃO/icon-list.svg" class="icon">
+                    <p>Atualizações com sucesso</p>
+                </div>
+                <div class="confirma">
+                    <img src="../IMG/INSCRIÇÃO/icon-list.svg" class="icon">
+                    <p>E muito mais</p>
+                </div>
+            </div>
+
+            <div class="email">
+                <p>Endereço De Email:</p>
+                <p><span class="erro">Email errado</span></p>
+            </div>
+                <input type="text" class="caixaEmail" value="email@company.com">
+
+
+            <input type="button" class="btn" value="Se inscreva" onclick="inscrever()">
+
+            <div class="imagem">
+                <img src="../IMG/INSCRIÇÃO/illustration-sign-up-desktop.svg">
+            </div>
+            
+            </div>
+        </div>
+
+        <div class="pop-up">
+            <div class="pop-itens">
+            <div class="img-pop">
+                <img src="../IMG/INSCRIÇÃO/icon-success.svg">
+            </div>
+            <div class="titulo"><h1>Obrigado por se inscrever</h1></div>
+            <div class="paragrafo"><p>a confirmação da inscrição estara sendo enviado no seu email "<span class="seuEmail"></span>" Porfavor check para ver se deu tudo certo</p></div>
+
+    <input type="button" class="btn" value="Sair" onclick="sair()">
+
+            </div>     
+        </div>
+    </div>
+ 
+<script src="../JS/Inscricao.js"></script>
+</body>
+</html>

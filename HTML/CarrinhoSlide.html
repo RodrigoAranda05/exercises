@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../CSS/CarrinhoSlide.css">
+    <title>Carrinho com slides</title>
+</head>
+<body>
+
+        <!--NAVBAR-->
+        <header>
+            <div class="logo">
+                <span>L</span>O<span>J</span>A
+            </div>
+    
+            <div class="busca">
+                <input type="text" class="buscaInput" placeholder="Busque por produtos">
+                <button type="submit" class="fas fa-search" id="lupa"></button>
+            </div>
+    
+            <div class="icones">
+                <i class="fa-regular fa-heart" id="icon-heart"></i>
+                <i class="fa-solid fa-cart-shopping" id="icon-cart"></i>
+                <i class="fa-solid fa-bars" id="icon-bar"></i>
+            </div>
+    
+        </header>
+    
+        <div class="bara-nav">
+            <input type="text" class="buscaInput" placeholder="Busque por produtos">
+            <button type="submit" class="fas fa-search" id="lupa"></button>
+    
+            <div class="container-btn">
+                <div class="bara-btn">Curtidas</div>
+                <div class="bara-btn" id="icon-cart">Carrinho</div>
+            </div>
+        </div>
+        <!--NAVBAR-->
+    
+        <!--CARRINHO-->
+            <div class="containerCarrinho">
+    
+                <div class="cardCarrinho">
+                    <div class="tituloCar">
+                        Seu Carinho<span><i class="fa-solid fa-xmark" id="removerCart"></i></span>
+                    </div>
+                    <div class="totalCarinho">
+                        Preço total: R$: <span>0,00</span>
+                    </div>
+                    
+                    <div class="produtosCarrinho">
+    
+                    </div>
+    
+                    <div class="btnCompra">
+                        Finalizar Compra
+                    </div>
+    
+                </div>
+            </div>
+        <!--CARRINHO-->
+
+    <main>
+        <div class="slider">
+
+            <div class="product">
+
+                <div class="image">
+                    <img src="../IMG/CARRINHO/camisa1.png" class="imgProduto">
+                </div>
+
+                <div class="information">
+                    <div class="title">Camisa</div>
+
+                    <div class="price">99,99</div>
+
+                    <button class="btnCart">Comprar</button>
+                </div>
+
+            </div>
+
+            <div class="product">
+
+                <div class="image">
+                    <img src="../IMG/CARRINHO/Casaco1.png" class="imgProduto">
+                </div>
+
+                <div class="information">
+                    <div class="title">Casaco</div>
+
+                    <div class="price">139,99</div>
+
+                    <button class="btnCart">Comprar</button>
+                </div>
+
+            </div>
+
+            <div class="product">
+
+                <div class="image">
+                    <img src="../IMG/CARRINHO/headset1.png" class="imgProduto">
+                </div>
+
+                <div class="information">
+                    <div class="title">Headphone</div>
+
+                    <div class="price">55,99</div>
+
+                    <button class="btnCart">Comprar</button>
+                </div>
+
+            </div>
+
+            <div class="product">
+
+                <div class="image">
+                    <img src="../IMG/CARRINHO/iphone1.png" class="imgProduto">
+                </div>
+
+                <div class="information">
+                    <div class="title">Iphone 13</div>
+
+                    <div class="price">890,99</div>
+
+                    <button class="btnCart">Comprar</button>
+                </div>
+
+            </div>
+
+            <div class="product">
+
+                <div class="image">
+                    <img src="../IMG/CARRINHO/iphone2.png" class="imgProduto">
+                </div>
+
+                <div class="information">
+                    <div class="title">Iphone 13 PRO MAX</div>
+
+                    <div class="price">999,99</div>
+
+                    <button class="btnCart">Comprar</button>
+                </div>
+
+            </div>
+
+            <div class="product">
+
+                <div class="image">
+                    <img src="../IMG/CARRINHO/notebook1.png" class="imgProduto">
+                </div>
+
+                <div class="information">
+                    <div class="title">Notebook</div>
+
+                    <div class="price">455,90</div>
+
+                    <button class="btnCart">Comprar</button>
+                </div>
+
+            </div>
+
+            <div class="product">
+
+                <div class="image">
+                    <img src="../IMG/CARRINHO/relogio1.png" class="imgProduto">
+                </div>
+
+                <div class="information">
+                    <div class="title">Relogio</div>
+
+                    <div class="price">23,00</div>
+
+                    <button class="btnCart">Comprar</button>
+                </div>
+
+            </div>
+
+            <div class="product">
+
+                <div class="image">
+                    <img src="../IMG/CARRINHO/tenis1.png" class="imgProduto">
+                </div>
+
+                <div class="information">
+                    <div class="title">Tenis Azul</div>
+
+                    <div class="price">90,99</div>
+
+                    <button class="btnCart">Comprar</button>
+                </div>
+
+            </div>
+
+            <div class="product">
+
+                <div class="image">
+                    <img src="../IMG/CARRINHO/tenis2.png" class="imgProduto">
+                </div>
+
+                <div class="information">
+                    <div class="title">Tenis Preto</div>
+
+                    <div class="price">100,99</div>
+
+                    <button class="btnCart">Comprar</button>
+                </div>
+
+            </div>
+
+            <div class="arrow">
+
+                <button class="left" onclick="left()"><</button>
+                <button class="right" onclick="right()">></button>
+
+            </div>
+
+        </div>
+    </main>
+    
+
+    <script src="../JS/CarrinhoSlide.js"></script>
+</body>
+</html>

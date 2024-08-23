@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+
+:root{
+    --branco: #fbfbfd;
+    --branco-leve: #e9e9f0;
+    --preto: #444;
+    --cinza: #777;
+    --azul: #0066cc;
+}
+
+body{
+    background-color: var(--branco-leve);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-family: 'Sen', sans-serif;
+}
+
+.card{
+    background-color: var(--branco);
+    width: 700px;
+    height: 700px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 15px;
+}
+
+.itens{
+    margin: 30px;
+}
+
+h2{
+    color: var(--preto);
+}
+
+p{
+    color: var(--cinza);
+    font-size: 0.9rem;
+}
+
+.caixaNome{
+    width: 100%;
+    height: 40px;
+    margin-top: -10px;
+    border-radius: 5px;
+    border: var(--cinza) 2px solid;
+    font-size: 16px;
+}
+
+.nome-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.nome-item {
+    flex: 1;
+}
+
+.caixaEmail{
+    width: 100%;
+    height: 40px;
+    margin-top: -10px;
+    border-radius: 5px;
+    border: var(--cinza) 2px solid;
+    font-size: 16px;
+}
+
+.mensagem{
+    width: 100%;
+    height: 180px;
+    margin-top: -10px;
+    border-radius: 5px;
+    border: var(--cinza) 2px solid;
+    font-size: 20px;
+}
+
+.escolha-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.escolha-item {
+    flex: 1;
+    border-radius: 5px;
+    border: var(--cinza) 2px solid;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.escolha{
+    margin: 10px;
+    margin-left: 20px;
+}
+
+h3{
+    font-size: 18px;
+    color: var(--preto);
+}
+
+.check{
+    margin-right: 15px;
+}
+
+.btn{
+    width: 100%;
+    height: 50px;
+    background-color: var(--azul);
+    color: var(--branco);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+@media (max-width: 450px ){
+
+h3{
+    font-size: 15px;
+    
+}
+
+}
+
+@media (max-width: 170px ){
+
+    h3{
+        font-size: 12px;
+        
+    }
+
+    .escolha{
+        margin: 0px;
+        margin-left: 0px;
+        font-size: 10px;
+    }
+    
+    }

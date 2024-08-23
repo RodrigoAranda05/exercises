@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --azul: linear-gradient #147bf0 to #c058f3;
+    --preto-bg: #181824;
+    --azul-mar: #25273C;
+    --cinza: #837e7e;
+    --branco: #ffff;
+}
+
+.dark-mode{
+    --preto-bg: #F7EEDD;
+    --azul-mar: #fff;
+    --branco: #181824;
+}
+
+.white-mode{
+    --preto-bg: #181824;
+    --azul-mar: #25273C;
+    --branco: #ffff;
+}
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0px;
+    background-color: var(--preto-bg);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.banner img{
+    position: fixed;
+    width: 100%;
+    height: 370px;
+    z-index: -1;
+}
+
+.titulo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 3rem;
+    color: #fff;
+    margin-top: 60px;
+    letter-spacing: 15px;
+    width: 650px;
+}
+
+.titulo img{
+    cursor: pointer;
+}
+
+.novaTarefa{
+    width: 650px;
+}
+
+.inputNovaTarefa{
+    width: 650px;
+    height: 80px;
+    background-color: var(--azul-mar);
+    border: none;
+    font-size: 1.3rem;
+    padding-left: 20px;
+    box-sizing: border-box;
+    color: var(--cinza);
+    border-radius: 5px;
+}
+
+.inputNovaTarefa:focus{
+    outline: none;
+}
+
+.todasTarefas{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.tarefa {
+    display: flex;
+    align-items: center;
+    width: 650px;
+    height: 80px;
+    background-color: var(--azul-mar);
+    border: none;
+    font-size: 1.3rem;
+    padding-left: 20px;
+    box-sizing: border-box;
+    color: var(--cinza);
+    border-radius: 0px;
+    border-bottom: 1px solid var(--cinza);
+    box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.2);
+}
+
+.checkTarefa {
+    margin-right: 20px;
+    width: 25px;
+    height: 25px;
+    appearance: none;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    position: relative;
+    background: #c058f3;
+    cursor: pointer;
+}
+
+.checkTarefa:checked::before {
+    content: '\2714'; /* Símbolo de correto */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 16px;
+}
+
+.checkTarefa:checked + p {
+    text-decoration: line-through;
+}
+
+.tarefa p {
+    position: relative;
+    top: 2px;
+}
+
+
+.estatisticas{
+    width: 650px;
+    height: 55px;
+    background-color: var(--azul-mar);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--cinza);
+}
+
+.estatisticas p {
+    cursor: pointer;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.estatisticas p.active{
+    color: #57ddff;
+}

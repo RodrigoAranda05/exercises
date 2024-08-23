@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de votação</title>
+    <link rel="stylesheet" href="../CSS/SistemaVotação2.css">
+</head>
+<body>
+    
+    <div class="container">
+    <h1 class="titulo">Sistema de Votação</h1>
+
+    <p>Crie uma opção de voto:</p>
+    <input type="text" class="inputOpcao" placeholder="Opção de voto:"> <input type="button" value="Criar" class="btnOpcao">
+
+    <p>Codigo de Eleitor:</p>
+    <input type="number" class="inputNumero">
+
+    <h1 class="titulo">é necessario selecionar o opção!</h1>
+
+    <div class="vazio">
+        Sem opção de voto agora
+    </div>
+
+    <div class="opcoes">
+
+    </div>
+
+    <br>
+
+    <input type="button" value="Votar" class="btn">
+
+    <hr>
+
+    <input type="button" value="encerrar votação" class="btnEncerrar">
+
+    <div class="resultado">
+
+    </div>
+
+</div>
+    <script src="../JS/SistemaVotação2.js"></script>
+</body>
+</html>
+
+<!--Exercício 3: Sistema de Votação
+Crie um sistema de votação onde você pode adicionar opções de voto e permitir que os usuários votem nessas opções.
+
+Requisitos:
+
+Adicionar opções de voto.
+Remover opções específicas.
+Votar em uma opção (incrementar o contador de votos).
+Mostrar o total de votos para cada opção.-->

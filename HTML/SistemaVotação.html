@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de votação</title>
+    <link rel="stylesheet" href="../CSS/SistemaVotação.css">
+</head>
+<body>
+    
+    <div class="container">
+    <h1 class="titulo">Sistema de Votação</h1>
+
+    <p>Numero de Eleitor:</p>
+    <input type="number" class="inputNumero">
+
+    <h1 class="titulo">é necessario selecionar o candidato!</h1>
+    <input type="radio" name="candidato" class="inputRadio" id="candidato1">
+    <label for="candidato1">Candidato 1</label>
+    <br>
+    <input type="radio" name="candidato" class="inputRadio" id="candidato2">
+    <label for="candidato2">Candidato 2</label>
+    <br>
+    <input type="radio" name="candidato" class="inputRadio" id="candidato3">
+    <label for="candidato3">Candidato 3</label>
+
+    <br>
+
+    <input type="button" value="Votar" class="btn">
+
+    <hr>
+
+    <input type="button" value="encerrar votação" class="btnEncerrar">
+
+    <div class="resultado">
+        <h3>Canditato 1:</h3><p id="resCandidato1">0</p>
+        <h3>Canditato 2:</h3><p id="resCandidato2">0</p>
+        <h3>Canditato 3:</h3><p id="resCandidato3">0</p>
+    </div>
+
+</div>
+    <script src="../JS/SistemaVotação.js"></script>
+</body>
+</html>

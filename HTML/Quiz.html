@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/Quiz.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Quiz</title>
+</head>
+<body>
+
+    <div class="popup">
+        <div class="itens">
+                <div class="titulo">
+                    <i class=""></i><p>HTML</p>
+                </div>
+                <div class="certos">
+                    <p>8</p>
+                </div>
+                <div class="texto-p2">
+                    De 10
+                </div>
+                <input type="button" class="btn-pop" value="Jogar novamente" onclick="jogarN()">
+            </div>
+    </div>
+
+    <div class="margem">
+
+        <div class="pergunta">
+            <div class="texto-g">Bem vindo ao <span>Frontend Quiz!</span></div>
+            <div class="texto-p">Escolha o desafio e comece</div>
+            <div class="acertos"></div>
+        </div>
+
+        <div class="temas">
+            <div class="btn" onclick="html()">
+                <i class="fa-brands fa-html5" id="html"></i><p>HTML</p></div>
+
+            <div class="btn" onclick="css()">
+                <i class="fa-brands fa-css3-alt" id="css"></i><p>CSS</p></div>
+
+            <div class="btn" onclick="js()">
+                <i class="fa-brands fa-js"id="js"></i><p>JAVASCRIPT</p></div>
+
+            <div class="btn" onclick="jogo()">
+                <i class="fa-solid fa-gamepad" id="jogo"></i></i><p>JOGOS</p></div>
+        </div>
+    </div>
+
+    <div class="resposta">
+        <div class="btn" id="opcaoA">
+            <i>A</i><p></p></div>
+
+        <div class="btn" id="opcaoB">
+            <i>B</i><p></p></div>
+
+        <div class="btn" id="opcaoC">
+            <i>C</i><p></p></div>
+
+        <div class="btn" id="opcaoD">
+            <i>D</i><p></p></div>
+ 
+             <input type="button" class="btn-res" value="Responder">
+    </div>
+</div>
+    
+    <script src="../JS/Quiz.js"></script>
+</body>
+</html>
+
+<!--
+Selecione um assunto do quiz (F)
+Selecione uma única resposta de cada pergunta entre uma escolha de quatro (F)
+Veja uma mensagem de erro ao tentar enviar uma resposta sem fazer uma seleção (F)
+Veja se eles fizeram uma escolha correta ou incorreta ao enviar uma resposta (F)
+Passe para a próxima pergunta depois de ver o resultado da pergunta (F)
+Veja um estado concluído com a pontuação após a pergunta final  (F)
+Jogue novamente para escolher outro assunto (F)
+Veja o layout ideal para a interface dependendo do tamanho da tela do dispositivo
+Veja os estados de foco e foco de todos os elementos interativos na página
+Navegue por todo o aplicativo apenas usando o teclado
+Bônus: altere o tema do aplicativo entre claro e escuro
+-->

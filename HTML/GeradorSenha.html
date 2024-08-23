@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../CSS/GeradorSenha.css">
+    <title>Gerador De Senha</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="titulo">
+            Gerador De Senha
+        </div>
+
+            <div class="senha">
+                <div class="senhaInput"><p class="geraSenha">Senha!</p><i class="fa-solid fa-copy" class="copia" onclick="clipboardCopy()"></i></div>
+            </div>
+
+            <div class="card">
+                <div class="itens">
+                    
+                <div class="quantidade">
+                <p>Quantidade de letras<span class="caracteres">0</span></p>
+                <input type="range" class="quantidadeInput" id="rangeInput" min="0" max="25" value="0">
+            </div>
+
+            <div class="maiusculas">
+                <input type="checkbox" class="maiusculasInput"> <p>Com letras maiusculas</p>
+            </div>
+
+            <div class="minusculas">
+                <input type="checkbox" class="minusculasInput"> <p>Com letras minusculas</p>
+            </div>
+
+            <div class="numeros">
+                <input type="checkbox"class="numerosInput"> <p>Com numeros</p>
+            </div>
+
+            <div class="simbolos">
+                <input type="checkbox"class="simbolosInput"> <p>Com simbolos</p>
+            </div>
+
+            <div class="força">
+                <div class="forçaInput">Força<span class="forçaSpan"></span></div>
+            </div>
+
+            <div class="btn" onclick="gerar()">
+                Gerar <i class="fa-solid fa-arrow-right"></i>
+            </div>
+
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="../JS/GeradorSenha.js"></script>
+</body>
+</html>

@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+
+:root{
+    --bg: #100F15;
+    --verde: #A3FFAA;
+    --branco: #fff;
+    --preto: #18171F;
+    --cinza: #24232B;
+    --trasparente: #7e7b7b;
+    --progress: 0%;
+}
+
+body{
+    background-color: var(--bg);
+    font-family: 'Sen', sans-serif;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    color: var(--branco);
+    font-size: 1.5rem;
+    margin: 30px;
+    margin-top: 100px;
+}
+
+.senha{
+    background-color: var(--cinza);
+    width: 35%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.senhaInput{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 20px;
+    font-size: 1.5rem;
+    color: var(--trasparente);
+}
+
+.senhaInput i{
+    cursor: pointer;
+    color: var(--verde);
+}
+
+.card{
+    margin: 30px;
+    width: 35%;
+    height: 100%;
+    background-color: var(--cinza);
+}
+
+.itens{
+    margin: 30px;
+}
+
+.quantidade p{
+    color: var(--branco);
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.quantidade span{
+    color: var(--verde);
+    font-size: 1.5rem;
+}
+
+
+.quantidadeInput {
+    width: 100%;
+    background: var(--preto);
+    height: 10px;
+    -webkit-appearance: none;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, var(--verde) var(--progress), var(--preto) var(--progress));
+}
+
+.quantidadeInput::-webkit-slider-thumb {
+    cursor: pointer;
+    appearance: none;
+    height: 20px;
+    width: 20px;
+    background-color: var(--branco);
+    border-radius: 50%;
+}
+
+.quantidadeInput::-moz-range-thumb {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    background-color: var(--branco);
+    border-radius: 50%;
+}
+
+.maiusculas, .minusculas, .numeros, .simbolos{
+    display: flex;
+    color: var(--branco);
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    background-color: var(--cinza);
+    border: 2px solid var(--branco);
+    cursor: pointer;
+    position: relative;
+    margin-right: 10px;
+}
+
+input[type="checkbox"]:checked::before {
+    content: "✓";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--verde);
+    color: var(--preto);
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.força{
+    display: flex;
+    align-items: center;
+    background: var(--preto);
+    width: 100%;
+    height: 50px;
+    color: var(--trasparente);
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.forçaInput{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 20px;
+}
+
+.força span{
+    margin-right: 20px;
+}
+
+.btn{
+    background-color: var(--verde);
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.btn i{
+    margin-left: 15px;
+    font-size: 1.4rem;
+}
+
+@media (max-width: 1300px) {
+    .card{
+        width: 65%;
+    }
+    .senha{
+        width: 65%;
+    }
+}
+
+@media (max-width: 650px) {
+    .card{
+        width: 100%;
+    }
+    .senha{
+        width: 100%;
+    }
+}
+
